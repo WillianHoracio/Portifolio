@@ -1,0 +1,42 @@
+.conhecimentos__column{
+    position: relative;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+    margin-bottom: 40px;
+    background-image: url('../images/background-wood.png');
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 40px;
+    gap: 30px;
+    z-index: 2;
+  }
+  
+  .conhecimentos__column::before {
+    background-image: url('../images/background-red.png');
+    border-radius: 5px;
+    content:'';
+    position: absolute;
+    background-color: #fff;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    z-index: -1;
+  
+  }
+  
+  @media screen and (max-width: 900px) {
+    .conhecimentos__column {
+      width: 100%;
+    }
+  
+    .container__title {
+      width: 100%;
+      height: 100px;
+    }
+  }
+  

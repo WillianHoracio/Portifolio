@@ -1,0 +1,13 @@
+.certificado {
+    border: 1px black solid;
+    font-size: 25px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+  
+.certificados {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}

@@ -1,0 +1,25 @@
+.card-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../../images/background-brown.png');
+    margin: 15px 5px;
+    border-radius: 5px 20px;
+    border: 1px solid black;
+    height: 40px;
+    font-size: 20px;
+    width: 50%;
+    min-width: 290px;
+    margin: 10px auto;
+    transition: border-radius 0.5s, color 0.5s, width 0.5s;
+    box-sizing: border-box;
+
+}
+
+.card-item:hover {
+    width: 100%;
+    font-weight: bold;
+    border-radius: 5px;
+    color:#101a47;
+}

@@ -1,38 +1,84 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Macondo', cursive;
+  max-width: 100vw;
+  overflow: hidden;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-image: url('./images/background-wood.png');
 }
 
-.App-link {
-  color: #61dafb;
+.text-field {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  font-size: 24px;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: justify;
+  font-size: 30px;
+  line-height: 40px;
+  text-indent: 4rem;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.text-field h1{
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+
+
+.main-box{
+ width: calc(100% - 50px);
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+ background-image: url('./images/background-brown.png');
+ overflow: hidden;
+}
+
+.container{
+  position: relative;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 20px;
+  height: auto;
+  box-sizing: border-box;
+  z-index: 0;
+  margin-bottom: 50px;
+  background-color: transparent;
+  min-height: 30vh;
+  border-bottom: 4px dashed black;
+
+}
+
+.container__title {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 900px) {
+
+  .container__title {
+    width: 100%;
+    height: 100px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 550px) {
+  .main-box{
+    width: 100%;
+  }
+
+  .text-field {
+    font-size: 24px;
   }
 }

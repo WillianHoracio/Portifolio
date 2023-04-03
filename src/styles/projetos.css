@@ -1,0 +1,113 @@
+.projeto {
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: flex-start;
+    background-image: url('../images/background-wood.png');
+    border-radius: 5px;
+    width: 40%;
+    gap: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    z-index: 0;
+}
+
+.projeto::before {
+    
+    background-image: url('../images/background-red.png');
+    border-radius: 5px;
+    content:'';
+    position: absolute;
+    background-color: #fff;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    z-index: -1;
+      
+}
+
+.subtitulo {
+    text-align: center;
+    width: fit-content;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    margin-bottom: 10px;
+    padding: 0px 30px ;
+    border: 1px solid black;
+    border-radius: 40px;
+    background: rgb(190,182,182);
+    background: linear-gradient(90deg, rgb(95, 95, 95) 0%, rgba(242,237,237,1) 17%, rgba(240,235,235,1) 49%, rgba(200,196,196,1) 92%, rgb(114, 113, 113) 100%); 
+}
+
+.projeto__sobre {
+    width:85%;
+    min-width: 275px;
+    height: auto;
+    background-image: url('../images/background-brown.png');
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    text-align: justify;
+    border: solid #927a5a;
+    border-width: 0px 5px;
+    padding: 10px;
+    font-size: 24px;
+    line-height: 35px;
+    text-indent: 4rem;
+}
+
+.projeto__sobre a{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+
+.projeto__img {
+    height: auto;
+    width: 85%;
+    border: 1px solid black;
+}
+
+.projeto__lab-planner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    background-image: url('../images/background-brown.png');
+    border: #000000 solid;
+    border-width: 0px 10px 10px 0px;
+    border-radius: 40px;
+}
+
+.projeto__lab-planner img{
+    height: 200px;
+}
+
+@media screen and (max-width: 1200px) {
+    .projeto {
+        width: 90%;
+    }
+
+    
+}
+
+@media screen and (max-width: 500px) {
+    .projeto {
+        width: 100%;
+        gap: 20px 0px;
+    }
+
+    .projeto__sobre {
+        width: 100%;
+    } 
+
+    .projeto__img {
+        width: 100%;
+    }
+}
+
+
