@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './Card.css'
 import CardItem from './CardItem'
-import { act } from 'react-dom/test-utils'
+
 
 const Card = ({title, itemList, image, column, active}) => {
  

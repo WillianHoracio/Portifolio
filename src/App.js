@@ -128,7 +128,7 @@ function App() {
     
  
         <div className='container__title'>
-          <Title title="Apresentação" />
+          <Title title="Apresentação" imageOn={false}/>
         </div>
 
         <section className='sobre container'>
@@ -145,7 +145,7 @@ function App() {
           <img src={dragon}/>
         </section>
         <div className='container__title'>
-          <Title title="Habilidades" />
+          <Title title="Habilidades" imagem={true}/>
         </div>
         <section className="habilidades container">
         
@@ -169,8 +169,8 @@ function App() {
          
         </section>
         
-        <div className='container__title'>
-            <Title title="Projetos" />
+        <div className='container__title' >
+            <Title title="Projetos" imagem={true}/>
         </div>
 
         <section className='projetos container'>
@@ -220,7 +220,7 @@ function App() {
           </div>
         </section>
         <div className='container__title'>
-          <Title title="Certificados" />
+          <Title title="Certificados" imagem={true}/>
         </div>   
         <section className='certificados container'>
           <div className='certificado'>
@@ -235,7 +235,7 @@ function App() {
           </div>
         </section>
         <div className='container__title'>
-          <Title title="Contato" />
+          <Title title="Contato" imagem={true}/>
         </div>
         <section className='contato container'>
               <div className='contato__item'>

@@ -1,18 +1,18 @@
 import './Title.css'
-import imperial from '../../images/imperial.png'
 import sword from '../../images/sword.png'
+import { useState } from 'react'
 
 
-import {AiFillCaretLeft, AiFillCaretRight} from 'react-icons/ai'
 
-const Title = ({title}) => {
+const Title = ({title, imagem}) => {
+
     return (
         <div className='title'>
-            <img src={sword} className='sword'/>
+            {imagem && <img src={sword} className='sword'/>}
             <label>         
                 <h2>{title}</h2>   
             </label>
-            <img src={sword} className='sword-right'/>
+            {imagem && <img src={sword} className='sword-right'/>}
         </div>
     )
 }
