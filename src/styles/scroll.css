@@ -4,43 +4,43 @@
     width:100vw;
     z-index: 999;
     transform: rotateX(180deg);
-  }
+}
   
-  .final-scroll {
+.final-scroll {
     position: relative;
     width: 100vw;
     height: 126px;
     z-index: 999;
-  }
+}
 
-  .scroll__body {
+.scroll__body {
     position:absolute;
     background-image: url('../images/scroll-body.png');
     width: calc(100% - 104px);
     height: 126px;
     left:52px;
     z-index: 999;
-  }
+}
 
-  .scroll__start {
+.scroll__start {
     position: absolute;
     left: 0;
     background-image: url('../images/scroll.png');
     width: 52px;
     height: 126px;
     transform: rotateY(180deg);
-  }
+}
   
   
-  .scroll__end {
+.scroll__end {
     position: absolute;
     right: 0;
     background-image: url('../images/scroll.png');
     width: 52px;
     height: 126px;
-  }
+}
   
-  .left-border {
+.left-border {
     position:absolute;
     left:15px;
     z-index: 900;
@@ -48,9 +48,9 @@
     top:126px;
     width: 34px;
     background-image: url('../images/scroll-side-removebg-preview.png');
-  }
+}
   
-  .right-border {
+.right-border {
     position:absolute;
     right:15px;
     z-index: 900;
@@ -59,9 +59,9 @@
     width: 34px;
     background-image: url('../images/scroll-side-removebg-preview.png');
     transform: rotateY(180deg);
-  }
+}
 
-  @media screen and (max-width: 550px) {
+ @media screen and (max-width: 550px) {
     .first-scroll {
         width:115vw;
     }
@@ -77,4 +77,4 @@
     .right-border {
         right:-10px;
     }
-  }
+ }

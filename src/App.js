@@ -126,7 +126,6 @@ function App() {
       </header>
       <main className='main-box'>
     
- 
         <div className='container__title'>
           <Title title="Apresentação" imageOn={false}/>
         </div>
@@ -144,29 +143,32 @@ function App() {
           </div>
           <img src={dragon}/>
         </section>
+
         <div className='container__title'>
           <Title title="Habilidades" imagem={true}/>
         </div>
+
         <section className="habilidades container">
         
-        <div className='text-field'>
+          <div className='text-field'>
             <label><p>Minhas habilidades foram desenvolvidas durante o Curso Técnico de Informática realizado na SATC, variados cursos na plataforma Alura, dois estágios realizados como 
-              programador back-end, mais de 5 anos programando por hobbie e utilizando meus conhecimentos para atender demandas observadas enquanto atuando em outras áreas.
-            </p>
+                programador back-end, mais de 5 anos programando por hobbie e utilizando meus conhecimentos para atender demandas observadas enquanto atuando em outras áreas.
+              </p>
             </label>
           </div>
+
           <div className='conhecimentos__column'>
             {cardConhecimento.filter(item => item.column === 1).map(item => (
               <Card key={item.title} title={item.title} image={item.image} itemList={item.itens} column={1} active={item.active}/>
             ))}
           </div>
+
           <div className='conhecimentos__column'> 
             {cardConhecimento.filter(item => item.column === 2).map(item => (
               <Card key={item.title} title={item.title} image={item.image} itemList={item.itens} column={2} active={item.active}/>
             ))}
           </div>
 
-         
         </section>
         
         <div className='container__title' >
@@ -174,33 +176,31 @@ function App() {
         </div>
 
         <section className='projetos container'>
-          
-
           <div className='projeto'>
+
             <div className='subtitulo'>
               <label>Projeto Ratos</label>
             </div>
+
             <div className='projeto__sobre'>
               <label><p>Software desktop desenvolvido utilizando a plataforma Delphi, e projetado para automatizar a contabilização de cronômetros e contadores em testes comportamentais com ratos. </p>
               </label>
             </div>
             
-              <img src={tresCamaras} className='projeto__img'/>
-              <div className='projeto__sobre'>
+            <img src={tresCamaras} className='projeto__img'/>
+            <div className='projeto__sobre'>
               <label>
                 <p>Utilizado atualmente no laboratório <a href="https://www.instagram.com/land.unesc/">LAND UNESC</a>, gerando grande impacto por meio da redução de cerca de 66% da mão de 
                 obra necessária para a execução dos testes.</p>
               </label>
             </div>
-            
-
-           <img src={cruzElevada} className='projeto__img'/>
+            <img src={cruzElevada} className='projeto__img'/>
       
           </div>
 
           <div className='projeto'>
             <div className='subtitulo'>
-             <label>Lab-Planner</label>
+              <label>Lab-Planner</label>
             </div>
             <div className='projeto__sobre'>
               <label><p>Uma plataforma para gerenciamento de laboratórios de pesquisa que utilizam testes com animais. Também terá os testes disponíveis no projeto anterior, convertidos para JavaScript, e otimizado para execução de testes utilizando apenas o celular.</p>
@@ -219,43 +219,49 @@ function App() {
             
           </div>
         </section>
+
         <div className='container__title'>
           <Title title="Certificados" imagem={true}/>
         </div>   
+
         <section className='certificados container'>
           <div className='certificado'>
-              <label>Curso Técnico de Informática - Código de autenticação SISTEC: <a href="https://sistec.mec.gov.br/validadenacional">65143/61029968CM</a></label>
+            <label>Curso Técnico de Informática - Código de autenticação SISTEC: <a href="https://sistec.mec.gov.br/validadenacional">65143/61029968CM</a></label>
           </div>
           <div className='certificado'>
-              <label>
-                <a href="https://cursos.alura.com.br/user/williansh6e/fullCertificate/932739472bc417042e66f68b8d80bd5a">
-                  Certificado Geral Alura
-                </a>
-              </label>
+            <label>
+              <a href="https://cursos.alura.com.br/user/williansh6e/fullCertificate/932739472bc417042e66f68b8d80bd5a">
+                Certificado Geral Alura
+              </a>
+            </label>
           </div>
         </section>
+
         <div className='container__title'>
           <Title title="Contato" imagem={true}/>
         </div>
+
         <section className='contato container'>
-              <div className='contato__item'>
-                <AiOutlineLinkedin size={70}/>
-                <a href="https://www.linkedin.com/in/willianhoracio/">WillianHoracio</a>
-              </div>
-              <div className='contato__item'>
-                <AiOutlineGithub size={70}/>
-                <a href="https://github.com/WillianHoracio">WillianHoracio</a>
-              </div>
-              <div className='contato__item'>
-                <AiOutlineInstagram size={70}/>
-                <a href="https://www.instagram.com/willian_sanh/">willian_sanh</a>
-              </div>
-              <div className='contato__item'>
-                <AiOutlineMail size={70}/>
-                <label>williansh6e@hotmail.com</label>
-              </div>
+          <div className='contato__item'>
+            <AiOutlineLinkedin size={70}/>
+            <a href="https://www.linkedin.com/in/willianhoracio/">WillianHoracio</a>
+          </div>
+          <div className='contato__item'>
+            <AiOutlineGithub size={70}/>
+            <a href="https://github.com/WillianHoracio">WillianHoracio</a>
+          </div>
+          <div className='contato__item'>
+            <AiOutlineInstagram size={70}/>
+            <a href="https://www.instagram.com/willian_sanh/">willian_sanh</a>
+          </div>
+          <div className='contato__item'>
+            <AiOutlineMail size={70}/>
+            <label>williansh6e@hotmail.com</label>
+          </div>
         </section>
+
       </main>   
+      
       <footer>
         <div className='final-scroll'>
           <div className='scroll__start'/>

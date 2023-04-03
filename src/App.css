@@ -28,16 +28,14 @@
   font-weight: bolder;
 }
 
-
-
 .main-box{
- width: calc(100% - 50px);
- display: flex;
- flex-wrap: wrap;
- align-items: center;
- justify-content: center;
- background-image: url('./images/background-brown.png');
- overflow: hidden;
+  width: calc(100% - 50px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./images/background-brown.png');
+overflow: hidden;
 }
 
 .container{
