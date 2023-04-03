@@ -213,7 +213,7 @@ function App() {
             </div>
             <div className='projeto__sobre'>
               <label>
-                <p>A plataforma está em estágios iniciais de desenvolvimento, e está sendo contruida utilizando a biblioteca React. Você pode acompanhar o desenvolimento atravez do <a href="https://lab-planner.vercel.app/">LAB PLANNER</a>. </p>
+                <p>A plataforma está em estágios iniciais de desenvolvimento, e está sendo construida utilizando a biblioteca React. Você pode acompanhar o desenvolimento atravez do <a href="https://lab-planner.vercel.app/">LAB PLANNER</a>. </p>
               </label>
             </div>
             
@@ -261,7 +261,7 @@ function App() {
         </section>
 
       </main>   
-      
+
       <footer>
         <div className='final-scroll'>
           <div className='scroll__start'/>
